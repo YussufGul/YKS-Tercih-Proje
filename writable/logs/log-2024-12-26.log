@@ -1,0 +1,9 @@
+CRITICAL - 2024-12-26 15:11:14 --> No suitable servers found (`serverSelectionTryOnce` set): [Failed to resolve 'cluster0-shard-00-02.g8rrc.mongodb.net']
+in VENDORPATH\mongodb\mongodb\src\functions.php on line 487.
+ 1 VENDORPATH\mongodb\mongodb\src\functions.php(487): MongoDB\Driver\Manager->selectServer(Object(MongoDB\Driver\ReadPreference))
+ 2 VENDORPATH\mongodb\mongodb\src\Collection.php(932): MongoDB\select_server(Object(MongoDB\Driver\Manager), [...])
+ 3 APPPATH\Controllers\Home.php(22): MongoDB\Collection->insertOne([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
